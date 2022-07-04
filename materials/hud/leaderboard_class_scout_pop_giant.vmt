@@ -1,0 +1,40 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "hud\leaderboard_class_scout_pop"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"%keywords" "tf"
+	"$translucent" 1
+}
+
+//T_TFBot_Giant_Scout_Popper
+//{
+	//ClassIcon	scout_pop_giant
+	//Health	1200
+	//Name	"Soda Popper Super Scout"
+	//Class	Scout
+	//Skill	Expert
+	//MaxVisionRange	1400
+	//WeaponRestrictions	PrimaryOnly
+	//Tag	"bot_giant"
+	//Attributes	"MiniBoss"
+	//ItemAttributes
+	//{
+		//"the soda popper"
+		//"bullets per shot bonus"	5
+		//"damage penalty" 0.5
+		//"faster reload rate"	0.1
+		//"fire rate bonus"	2
+	//}
+	//CharacterAttributes
+	//{
+		//"override footstep sound set"	5
+		//"move speed bonus"	1.1
+		//"damage force reduction"	0.7
+		//"airblast vulnerability multiplier"	0.3
+		//"airblast vertical vulnerability multiplier"	0.5
+	//}
+	//Item	"the soda popper"
+	//Item	"the bolt boy"
+//}

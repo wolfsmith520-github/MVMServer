@@ -1,0 +1,1308 @@
+population
+{
+	Templates
+	{
+		//=======STANDARD=======//
+
+		//Scout				
+		T_TFBot_Scout_Raygun_Expert
+		{
+			ClassIcon	scout_pistol_moon
+			Health	650
+			Name	"Super Moon Scout"
+			Class	Scout
+			Skill	Expert
+			Scale 1.4
+			WeaponRestrictions	SecondaryOnly
+			Item "Phononaut"
+			Item "The C.A.P.P.E.R"
+			Item "Batsaber"
+			ItemAttributes
+			{
+				ItemName	"The C.A.P.P.E.R"
+				//"sniper fires tracer"	1
+				//"fire rate bonus"	0.8
+				"critboost on kill" 100
+				"faster reload rate"	0.001
+				"damage bonus"	2.0
+			}
+			CharacterAttributes
+			{
+				//"head scale" 0.7
+				"move speed bonus"	2
+			}
+		}
+		T_TFBot_Scout_UberConsume_Easy
+		{
+			ClassIcon	scout_subtract
+			Health	125
+			Name	"Uber Steal Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"subtract victim medigun charge on hit"	5
+				"subtract victim cloak on hit"	10
+			}
+			Item	"the shortstop"
+			Item	"the virtual viewfinder"
+		}
+		T_TFBot_Scout_UberConsume
+			{
+			ClassIcon	scout_subtract
+			Health	125
+			Name	"Uber Consume Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"subtract victim medigun charge on hit"	10
+				"subtract victim cloak on hit"	20
+			}
+			Item	"the shortstop"
+			Item	"the virtual viewfinder"
+		}
+		T_TFBot_Scout_UberConsume_Fast
+		{
+			ClassIcon	scout_subtract_fast
+			Health	125
+			Name	"Fast Consume Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"subtract victim medigun charge on hit"	10
+				"subtract victim cloak on hit"	20
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	2.0
+			}
+			Item	"the shortstop"
+			Item	"the virtual viewfinder"
+		}
+		//soldier
+		T_TFBot_Soldier_Extended_Buff_Banner_Spammer
+		{
+			Class Soldier
+			Name "Rapid Buff Soldier"
+			Skill Expert
+			ClassIcon soldier_buff_spammer
+			Attributes SpawnWithFullCharge
+			Item "The Buff Banner"
+			ItemAttributes
+			{
+				ItemName	tf_weapon_rocketlauncher
+				"Projectile speed increased"	0.65
+				"faster reload rate"	-0.8
+				"fire rate bonus"	0.5
+			}
+			CharacterAttributes
+			{
+				"increase buff duration"	9.0
+			}
+		}
+
+		T_TFBot_Soldier_EMP
+		{
+			ClassIcon	soldier_backup_subtract
+			Health	200
+			Name	"EMP Soldier"
+			Class	Soldier
+			Skill	Normal
+			Attributes	"SpawnWithFullCharge"
+			ItemAttributes
+			{
+				ItemName	"the cow mangler 5000"
+				"damage bonus"	0.33
+				"Blast radius increased"	3
+				"Projectile speed increased"	0.5
+				"subtract victim medigun charge on hit" 50
+				"subtract victim cloak on hit"	25
+			}
+			CharacterAttributes
+			{
+				"increase buff duration"	9.0
+				"SET BONUS: dmg from sentry reduced"	0.3
+			}
+			Item	"the cow mangler 5000"
+			Item	"the battalion's backup"
+			Item	"lord cockswain's pith helmet"
+			Item	"lord cockswain's novelty mutton chops and pipe"
+		}
+		T_TFBot_Soldier_Burst_Pusher
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	200
+			Name	"Burst Fire Pusher"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the liberty launcher"
+				"damage causes airblast"	1
+				"damage bonus"	.45
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	6
+				"faster reload rate"	0.6
+				"Blast radius decreased"	1.2
+			}
+			Item	"the liberty launcher"
+			Item	"jumper's jeepcap"
+		}
+		
+		T_TFBot_Soldier_Burst_Pusher_Expert
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	200
+			Name	"Burst Fire Pusher"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the liberty launcher"
+				"damage causes airblast"	1
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	10
+				"faster reload rate"	0.4
+				"Blast radius decreased"	1.3
+			}
+			Item	"the liberty launcher"
+			Item	"jumper's jeepcap"
+		}
+		T_TFBot_Soldier_Burst_Healonhit
+		{
+			ClassIcon	soldier_burstfire_normal
+			Health	200
+			Name	"Burst Box Soldier"
+			Class	Soldier
+			Skill	Expert
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the black box"
+				"faster reload rate"	0.6
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	5
+				"heal on hit for rapidfire" 40
+			}
+			Item	"the black box"
+		}
+		T_TFBot_Soldier_Burst_Healonhit_Expert
+		{
+			ClassIcon	soldier_burstfire_normal
+			Health	200
+			Name	"Burst Box Soldier"
+			Class	Soldier
+			Skill	Expert
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the black box"
+				"faster reload rate"	0.4
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	10
+				"damage bonuse"	1.5
+				"heal on hit for rapidfire" 40
+				"heal on kill"	200
+			}
+			Item	"the black box"
+			Item	"worms gear"
+		}
+		//Pyro
+		T_TFBot_Pyro_ScorchShot_Wide
+		{
+			Class Pyro
+			Name "Wide Pyro Pusher"
+			Skill Expert
+			ClassIcon pyro_scorch
+			Item "The Scorch Shot"
+			Item "madame dixie"
+			WeaponRestrictions SecondaryOnly
+			ItemAttributes
+			{
+				ItemName "The Scorch Shot"
+				//"damage bonus"	1
+				//"fire rate bonus" 0.5
+				"Projectile speed increased" 0.35
+				"Blast radius increased"	1.2
+				"damage causes airblast"	1
+			}
+		}
+		//heavy
+		T_TFBot_Heavy_Penetration_Deflector
+		{
+			Class	HeavyWeapons
+			Name	"Penetration Deflector"
+			ClassIcon	heavy_penetrator
+			ItemAttributes
+			{
+				ItemName	"Iron Curtain"
+				"projectile penetration"	1
+				"attack projectiles"	2
+			}
+			Item	"Iron Curtain"
+			Item	"potato hat"
+		}
+		T_TFBot_Heavy_Gatling
+		{
+			ClassIcon	heavy_shotgun_burst
+			Health	300
+			Name	"Gatling Shotgun Heavy"
+			Class	HeavyWeapons
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			ItemAttributes
+			{
+				ItemName	"iron curtain"
+				"fire rate bonus"	2.5
+				"bullets per shot bonus"	3
+				"damage penalty"	0.33
+			}
+			Item	"iron curtain"
+			Item	"the eliminators safeguard"
+		}
+		T_TFBot_Heavy_Siege
+		{
+			ClassIcon	heavy_rocket
+			Health	900
+			Name	"Siege Heavy"
+			Scale	1.5
+			Class	HeavyWeapons
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			ItemAttributes
+			{
+				ItemName	"the brass beast"
+				"damage bonus"	60
+				"override projectile type"	2
+				"fire rate bonus"	40
+				"damage causes airblast"	1
+				"Blast radius increased"	1.5
+				"Projectile speed increased"	0.5
+				"aiming movespeed increased"	0.3
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"	0.3
+				"airblast vulnerability multiplier"	0.3
+				"move speed bonus"	1.2
+			}
+			Item	"the brass beast"
+			Item	"copper's hard top"
+		}
+		T_TFBot_Heavy_Gauntlet_Holiday
+		{
+			ClassIcon	heavy_mittens
+			Health	900
+			Name	"Holiday Gauntlet"
+			Scale	1.5
+			Class	HeavyWeapons
+			Skill	Hard
+			Attributes	"AlwaysCrit"
+			WeaponRestrictions	MeleeOnly
+			Item	"the holiday punch"
+			Item	"officer's ushanka"
+		}
+		//demoman
+		T_TFBot_Demo_Smoke
+		{
+			ClassIcon	demo
+			Health	175
+			Name	"Smoke Demo"
+			Class	Demoman
+			Skill	Easy
+			ItemAttributes
+			{
+				ItemName	tf_weapon_grenadelauncher
+				"use large smoke explosion"	1
+			}
+			Item	"the bearded bombardier"
+		}
+		//Engineer
+		
+		//----FAST BUILD 
+		T_TFBot_Engineer_Sentry_Teleporter_FastBuild
+		{
+			ClassIcon	engineer_fast
+			Name "Fast Build Engineer"
+			Class Engineer
+			Skill Expert
+			TeleportWhere spawnbot
+			Health 500
+			Attributes TeleportToHint
+			ItemAttributes
+			{
+				ItemName	"the jag"
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier" 5.0
+				"build rate bonus"	0.25
+			}
+			Item	"the jag"
+		}
+		T_TFBot_Engineer_Sentry_Battle_TeleIn_FastBuild
+		{
+			ClassIcon	engineer_fast
+			Name "Fast Build Engineer"
+			Class Enginee
+			Skill Expert
+			Health 275
+			Attributes TeleportToHint
+			ItemAttributes
+			{
+				ItemName	"the jag"
+				"fire rate bonus" 0.6
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier"	5.0
+				"engy building health bonus" 1.5
+			}
+			Item	"the jag"
+		}
+		T_TFBot_Engineer_Sentry_Tele_Battle_FastBuild
+		{
+			ClassIcon	engineer_fast
+			Name "Fast Build Engineer"
+			Class Engineer
+			Skill Expert
+			TeleportWhere spawnbot
+			Health 275
+			ItemAttributes
+			{
+				ItemName	"the jag"
+				"fire rate bonus" 0.6
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier" 5.0
+			}
+			Item	"the jag"
+		}
+		T_TFBot_Engineer_Sentry_Battle_FastBuild
+		{
+			ClassIcon	engineer_fast
+			Name "Fast Build Engineer"
+			Class Engineer
+			Skill Expert
+			Health 275
+			ItemAttributes
+			{
+				ItemName	"the jag"
+				"fire rate bonus" 0.6
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier"	5.0
+				"engy building health bonus" 1.5
+			}
+			Item	"the jag"
+		}
+		//----Armored
+		T_TFBot_Engineer_Sentry_Teleporter_Armored
+		{
+			Class Engineer
+			ClassIcon	engineer_armored
+			Name "Armored Engineer"
+			Skill Expert
+			TeleportWhere spawnbot
+			Attributes TeleportToHint
+			Scale	1.5
+			Health 900
+			ItemAttributes
+			{
+				ItemName	TF_WEAPON_WRENCH
+				"build rate bonus"	0.75
+				"engy building health bonus" 3
+			}
+		}
+		T_TFBot_Engineer_Sentry_Tele_Battle_Armored
+		{
+			Class Engineer
+			ClassIcon	engineer_armored
+			Name "Armored Engineer"
+			Skill Expert
+			TeleportWhere spawnbot
+			Scale	1.5
+			Health 900
+			ItemAttributes
+			{
+				ItemName	TF_WEAPON_WRENCH
+				"build rate bonus"	0.75
+				"engy building health bonus" 3
+			}
+		}
+		//----Hyper
+		T_TFBot_Engineer_Sentry_Teleporter_Hyper
+		{
+			Class Engineer
+			ClassIcon	engineer_fast
+			Name "Hyper Engineer"
+			Skill Expert
+			TeleportWhere spawnbot
+			Health 500
+			Attributes TeleportToHint
+			Attributes	"AlwaysCrit"
+			ItemAttributes
+			{
+				ItemName	"blood botkiller wrench mk.i"
+				"fire rate bonus" 0.6
+				"engy building health bonus" 1.5
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier" 15.0
+				"engineer teleporter build rate multiplier" 3.0
+				//"engy sentry radius increased" 1.3
+				"engy sentry damage bonus"  2
+				
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	2.0
+			}
+			Item	"blood botkiller wrench mk.i"
+			Item	"clockwerk's helm"
+		}
+		T_TFBot_Engineer_Sentry_Battle_TeleIn_Hyper
+		{
+			Class Engineer
+			ClassIcon	engineer_fast
+			Name "Hyper Engineer"
+			Skill Expert
+			Health 275
+			Attributes TeleportToHint
+			Attributes	"AlwaysCrit"
+			ItemAttributes
+			{
+				ItemName	"blood botkiller wrench mk.i"
+				"fire rate bonus" 0.6
+				"engy building health bonus" 2
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier" 15.0
+				"engineer teleporter build rate multiplier" 3.0
+				//"engy sentry radius increased" 1.3
+				"engy sentry damage bonus"  2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	2.0
+			}
+			Item	"blood botkiller wrench mk.i"
+			Item	"clockwerk's helm"
+		}
+		T_TFBot_Engineer_Sentry_Tele_Battle_Hyper
+		{
+			Class Engineer
+			ClassIcon	engineer_fast
+			Name "Hyper Engineer"
+			Skill Expert
+			TeleportWhere spawnbot
+			Health 275
+			Attributes	"AlwaysCrit"
+			ItemAttributes
+			{
+				ItemName	"blood botkiller wrench mk.i"
+				"fire rate bonus" 0.6
+				"engy building health bonus" 1.5
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier" 15.0
+				"engineer teleporter build rate multiplier" 3.0
+				//"engy sentry radius increased" 1.3
+				"engy sentry damage bonus"  2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	2.0
+			}
+			Item	"blood botkiller wrench mk.i"
+			Item	"clockwerk's helm"
+		}
+		T_TFBot_Engineer_Sentry_Battle_Hyper
+		{
+			Class Engineer
+			ClassIcon	engineer_fast
+			Name "Hyper Engineer"
+			Skill Expert
+			Health 275
+			Attributes	"AlwaysCrit"
+			ItemAttributes
+			{
+				ItemName	"blood botkiller wrench mk.i"
+				"fire rate bonus" 0.6
+				"engy building health bonus" 2
+				//"build rate bonus"	0.25
+				"engineer sentry build rate multiplier" 15.0
+				"engineer teleporter build rate multiplier" 3.0
+				//"engy sentry radius increased" 1.3
+				"engy sentry damage bonus"  2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	2.0
+			}
+			Item	"blood botkiller wrench mk.i"
+			Item	"clockwerk's helm"
+		}
+
+		//sniper
+		T_TFBot_Sniper_UberConsume_Easy
+		{
+			ClassIcon	sniper_subtract
+			Health	125
+			Name	"Uber Steal Sniper"
+			Class	Sniper
+			Skill	Expert
+			MaxVisionRange	2500
+			ItemAttributes
+			{
+				ItemName	"the machina"
+				"subtract victim medigun charge on hit"	25
+				"subtract victim cloak on hit"	50
+			}
+			Item	"the machina"
+			Item	"the razorback"
+		}
+		T_TFBot_Sniper_UberConsume
+		{
+			ClassIcon	sniper_subtract
+			Health	125
+			Name	"Uber Consume Sniper"
+			Class	Sniper
+			Skill	Expert
+			ItemAttributes
+			{
+				ItemName	"the machina"
+				"SRifle Charge rate increased"	2
+				"subtract victim medigun charge on hit"	50
+				"subtract victim cloak on hit"	100
+			}
+			Item	"the machina"
+			Item	"the razorback"
+			Item	"the virtual viewfinder"
+		}
+		T_TFBot_Sniper_Anti_Gravity
+		{
+			ClassIcon	sniper_push
+			Health	125
+			Name	"Anti-Gravity Sniper"
+			Class	Sniper
+			Skill	Expert
+			MaxVisionRange	3000
+			ItemAttributes
+			{
+				ItemName	"shooting star"
+				"apply z velocity on damage"	2000
+				"apply look velocity on damage" 2000
+				"damage causes airblast"	1
+			}
+			Item	"shooting star"
+			Item	"the mk 50"
+		}
+		T_TFBot_Sniper_Max_Gravity
+		{
+			ClassIcon	sniper_push
+			Health	125 
+			Name	"Max-Gravity Sniper"
+			Class	Sniper
+			Skill	Expert
+			MaxVisionRange	3000
+			ItemAttributes
+			{
+				ItemName	"shooting star"
+				"apply z velocity on damage"	-2000
+				"apply look velocity on damage" -2000
+				"damage causes airblast"	1
+			}
+			Item	"shooting star"
+			Item	"the mk 50"
+		}
+		T_TFBot_Sniper_Sydney_Bomb
+		{
+			ClassIcon	sniper_headshot_jarate
+			Health	125
+			Name	"Sydney Bomb Sniper"
+			Class	Sniper
+			Skill	Expert
+			ItemAttributes
+			{
+				ItemName	"the sydney sleeper"
+				"explosive sniper shot" 2
+				"SRifle Charge rate increased"	2.0
+			}
+			Item	"the sydney sleeper"
+			Item 	"Darwin's Danger Shield"
+			Item	"the bushwacka"
+		}
+		T_TFBot_Sniper_Huntsman_Archer
+			{
+			ClassIcon	sniper_bow_ignite
+			Health	125
+			Name	"Bowman Archer"
+			Class	Sniper
+			Skill	Expert
+			ItemAttributes
+			{
+				ItemName	"the huntsman"
+				"damage bonus"	0.5
+				"bleeding duration" 3
+				"set damagetype ignite"	 1
+				"attach particle effect"	2
+			}
+			Item	"the huntsman"
+		}
+		T_TFBot_Sniper_Huntsman_Archer_Rapid
+		{
+			ClassIcon	sniper_bow_multi_fire
+			Health	125
+			Name	"Rapid Bowman Archer"
+			Class	Sniper
+			Skill	Expert
+			ItemAttributes
+			{
+				ItemName	"the huntsman"
+				"fire rate bonus"	0.6
+				"bleeding duration" 5
+				"set damagetype ignite"	 1
+				"attach particle effect"	2
+				"minicrit vs burning player"	1
+			}
+			Item	"the huntsman"
+			Item	"the warsworn helmet"
+			Item	"the razorback"
+		}
+		T_TFBot_Sniper_Huntsman_Archer_Rapid_Expert
+		{
+			ClassIcon	sniper_bow_multi_fire
+			Health	1200
+			Name	"Bowman Artemis"
+			Scale	1.5
+			Class	Sniper
+			Skill	Expert
+			ItemAttributes
+			{
+				ItemName	"the huntsman"
+				"fire rate bonus"	0.5
+				"faster reload rate"	0.2
+				"bleeding duration" 5
+				"set damagetype ignite"	 1
+				"projectile penetration" 1
+				"attach particle effect"	2
+				"minicrit vs burning player"	1
+			}
+			Item	"the huntsman"
+			Item	"corona australis"
+			Item	"the razorback"
+		}
+		//Spy
+		T_TFBot_Spy_Silent
+		{
+			ClassIcon	spy_silent
+			Health	125
+			Name	"Silent Spy"
+			Class	Spy
+			Skill	Expert
+			ItemAttributes
+			{
+				ItemName	"the wanga prick"
+				"fire rate bonus"	0.6
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	2.0
+			}
+			Item	"the wanga prick"
+			Item	"the tomb readers"
+			Item	"a hat to kill for"
+		}
+		
+		//=======GIANT=======//
+		
+			//scout
+		T_TFBot_Giant_Scout_UberConsume_Easy
+		{
+			ClassIcon	scout_subtract_giant
+			Health	1600
+			Name	"Giant Uber Steal Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"subtract victim medigun charge on hit"	25
+				"subtract victim cloak on hit"	50
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"	0.7
+				"airblast vulnerability multiplier"	0.7
+				"override footstep sound set"	5
+			}
+			Item	"the shortstop"
+			Item	"the virtual viewfinder"
+		}
+		T_TFBot_Giant_Scout_UberConsume
+		{
+			ClassIcon	scout_subtract_giant
+			Health	1600
+			Name	"Giant Uber Consume Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"subtract victim medigun charge on hit"	50
+				"subtract victim cloak on hit"	100
+				"bullets per shot bonus"	2
+				"damage penalty"	0.33
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"	0.7
+				"airblast vulnerability multiplier"	0.7
+				"override footstep sound set"	5
+				"move speed bonus"	1.3
+			}
+			Item	"the shortstop"
+			Item	"the virtual viewfinder"
+		}
+		T_TFBot_Giant_Scout_UberConsume_Fast
+		{
+			ClassIcon	scout_subtract_fast_giant
+			Health	1600
+			Name	"Giant Uber Consume Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"subtract victim medigun charge on hit"	50
+				"subtract victim cloak on hit"	100
+				"bullets per shot bonus"	2
+				"damage penalty"	0.33
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"	0.7
+				"airblast vulnerability multiplier"	0.7
+				"override footstep sound set"	5
+				"move speed bonus"	2
+			}
+			Item	"the shortstop"
+			Item	"the virtual viewfinder"
+		}
+			
+			//soldier
+		T_TFBot_Giant_Soldier_Burst_Healonhit
+		{
+			ClassIcon	soldier_blackbox
+			Health	3800
+			Name	"Giant Black Burst Soldier"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the black box"
+				"move speed bonus"	0.5
+				"faster reload rate"	0.6
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	5.0
+				"Projectile speed increased"	0.65
+				"heal on hit for rapidfire"	200
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+			}
+			Item	"the black box"
+		}
+		T_TFBot_Giant_Soldier_Burst_Healonhit_Expert
+		{
+			ClassIcon	soldier_blackbox
+			Health	3800
+			Name	"Giant Black Burst Soldier"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the black box"
+				"move speed bonus"	0.5
+				"damage bonus"	1.5
+				"heal on kill"	3000
+				"faster reload rate"	0.6
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	7.0
+				"heal on hit for rapidfire"	500
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+			}
+			Item	"the black box"
+		}
+		T_TFBot_Giant_Soldier_Burst_Pusher
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	3800
+			Name	"Giant Burst Pusher"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the liberty launcher"
+				"damage causes airblast"	1
+				"damage bonus"	.75
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	8
+				"faster reload rate"	0.6
+				"Blast radius decreased"	1.2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+				"no self blast dmg"	1
+			}
+			Item	"the liberty launcher"
+			Item	"jumper's jeepcap"
+		}
+		T_TFBot_Giant_Soldier_Burst_Infinite
+		{
+			ClassIcon	soldier_burstfire_spammer
+			Health	3800
+			Name	"Giant Infinite Burst Soldier"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	tf_weapon_rocketlauncher
+				"faster reload rate"	0.001
+				"Projectile speed increased"	0.65
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	495
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+				"no self blast dmg"	1
+			}
+			Item	"worms gear"
+		}	
+		T_TFBot_Giant_Soldier_Burst_Infinite_Expert
+		{
+			ClassIcon	soldier_burstfire_spammer
+			Health	3800
+			Name	"Giant Infinite Burst Soldier"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	tf_weapon_rocketlauncher
+				"damage bonus"	1.5
+				"faster reload rate"	0.001
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	495
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+				"no self blast dmg"	1
+			}
+			Item	"worms gear"
+		}
+		T_TFBot_Giant_Soldier_EMP
+		{
+			ClassIcon	soldier_backup_subtract_giant
+			Health	3800
+			Name	"Giant EMP Soldier"
+			Class	Soldier
+			Skill	Expert
+			Attributes	"HoldFireUntilFullReload"
+			Attributes	"MiniBoss"
+			Attributes	"SpawnWithFullCharge"
+			ItemAttributes
+			{
+				ItemName	"the cow mangler 5000"
+				"subtract victim medigun charge on hit"	200
+				"subtract victim cloak on hit"	100
+				"damage bonus"	0.5
+				"Projectile speed increased"	0.5
+				"damage causes airblast"	1
+				"Blast radius increased"	3.0
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+				"increase buff duration"	9.0
+				"SET BONUS: dmg from sentry reduced"	0.1
+			}
+			Item	"the cow mangler 5000"
+			Item	"the battalion's backup"
+			Item	"lord cockswain's pith helmet"
+			Item	"lord cockswain's novelty mutton chops and pipe"
+		}	
+		T_TFBot_Giant_Soldier_Spammer_Buff
+		{
+			Class Soldier
+			Name "Giant Rapid Buff Soldier"
+			ClassIcon soldier_buff_spammer_giant
+			Health 3800
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes	"SpawnWithFullCharge"
+			Attributes MiniBoss
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"faster reload rate" -0.8
+				"fire rate bonus" 0.5
+
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	3
+				"increase buff duration"	9.0
+				"deploy time increased" 0.5
+			}
+			Item	"the buff banner"
+		}
+		//Pyro
+		T_TFBot_Giant_Pyro_ScorchShot_Wide
+		{
+			Class Pyro
+			Name "Giant Wide Pyro Pusher"
+			ClassIcon pyro_scorch_giant
+			Skill Expert
+			Health 3300
+			Item "The Scorch Shot"
+			Item "madame dixie"
+			WeaponRestrictions SecondaryOnly
+			Attributes MiniBoss
+			ItemAttributes
+			{
+				ItemName "The Scorch Shot"
+				"damage bonus"	1
+				"fire rate bonus" 0.3
+				"Projectile speed increased" 0.5
+				"damage causes airblast"	1
+				"Blast radius increased"	1.2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.6
+				"airblast vulnerability multiplier" 0.6
+				"override footstep sound set" 6
+			}
+		}
+		//Heavy
+		T_TFBot_Giant_Gatling_Shotgun_Heavy
+		{
+			ClassIcon	heavy_giant
+			Health	5000
+			Name	"Giant Gatling Shotgun Heavy"
+			Class	HeavyWeapons
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"iron curtain"
+				"damage bonus"	1.5
+				"fire rate bonus"	2.5
+				"bullets per shot bonus"	3
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.3
+				"airblast vulnerability multiplier"	0.3
+				"override footstep sound set"	2
+			}
+			Item	"iron curtain"
+			Item	"the eliminators safeguard"
+		}
+		T_TFBot_Giant_Juggernaut
+		{
+			ClassIcon	heavy_chief
+			Health	8000
+			Name	"Giant Juggernaut"
+			Class	HeavyWeapons
+			Skill	Expert
+			WeaponRestrictions	MeleeOnly
+			Tag	"bot_giant"
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"fists of steel"
+				"fire rate bonus"	0.6
+				"damage bonus"	5
+			}
+			CharacterAttributes
+			{
+				"health regen"	50
+				"move speed bonus"	0.5
+				"damage force reduction"	0.3
+				"airblast vulnerability multiplier"	0.3
+				"override footstep sound set"	2
+			}
+			Item	"fists of steel"
+			Item	"war head"
+		}
+		T_TFBot_Giant_Juggernaut_Minigun
+		{
+			ClassIcon	heavy_chief
+			Health	10000
+			Name	"Giant Minigun Juggernaut"
+			Class	HeavyWeapons
+			Skill	Expert
+			Tag	"bot_giant"
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"iron curtain"
+				"damage bonus"	3.0
+				"fire rate bonus"	0.5
+				"weapon spread bonus"	2.0
+				"attack projectiles"	2
+			}
+			CharacterAttributes
+			{
+				"health regen"	50
+				"move speed bonus"	0.5
+				"damage force reduction"	0.3
+				"airblast vulnerability multiplier"	0.3
+				"override footstep sound set"	2
+			}
+			Item	"iron curtain"
+			Item	"war head"
+		}
+		T_TFBot_Giant_Heavy_Shotgun_Burst_Infinite
+		{
+			Class Heavyweapons
+			Name "Giant Max Burst Shotgun Heavy"
+			ClassIcon heavy_burstrapid
+			Skill Expert
+			Health 5000
+			WeaponRestrictions SecondaryOnly
+			MaxVisionRange 1200
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SHOTGUN_HWG"
+				"auto fires full clip" 1
+				"auto fires when full" 1
+				"fire rate bonus" 0.4
+				"spread penalty" 0.5
+				"damage bonus" 0.5
+				"bullets per shot bonus" 3
+				"faster reload rate" 0.001
+				"clip size upgrade atomic" 493
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.7
+				"damage force reduction" 0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 2
+			}
+			Item	"der maschinensoldaten-helm"
+		}
+		T_TFBot_Giant_Heavy_Shotgun_Burst_Infinite_Expert
+		{
+			Class Heavyweapons
+			Name "Giant Max Burst Shotgun Heavy"
+			ClassIcon heavy_burstrapid
+			Skill Expert
+			Health 5000
+			WeaponRestrictions SecondaryOnly
+			MaxVisionRange 1200
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SHOTGUN_HWG"
+				"auto fires full clip" 1
+				"auto fires when full" 1
+				"fire rate bonus" 0.4
+				"spread penalty" 0.5
+				"bullets per shot bonus" 4
+				"faster reload rate" 0.001
+				"clip size upgrade atomic" 493
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.7
+				"damage force reduction" 0.3
+				"airblast vulnerability multiplier" 0.3
+				"attack projectiles" 2	// force ability to shoot down projectiles
+				"override footstep sound set" 2
+			}
+			Item	"der maschinensoldaten-helm"
+		}
+		
+		//Demoman
+
+		T_TFBot_Giant_Demo_Burst_Infinite
+		{
+			Class Demoman
+			Name "Giant Infinite Burst Demo"
+			ClassIcon demo_burstrapid
+			Health 3300
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			//Attributes HoldFireUntilFullReload
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"faster reload rate" 0.00001 //35% faster reload
+				"fire rate bonus" 0.06
+				//"clip size upgrade atomic" 495
+				"projectile spread angle penalty" 5
+				"Projectile speed increased"	1.1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 4
+				"no self blast dmg"	1
+			}
+			Item	"tam o'shanter"
+		}
+		T_TFBot_Giant_Demo_Burst_Infinite_Expert
+		{
+			Class Demoman
+			Name "Giant Infinite Burst Demo"
+			ClassIcon demo_burstrapid
+			Health 3300
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			//Attributes HoldFireUntilFullReload
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"faster reload rate" 0.00001 //35% faster reload
+				"fire rate bonus" 0.06
+				//"clip size upgrade atomic" 495
+				"damage bouns"	1.5
+				"projectile spread angle penalty" 3
+				"Projectile speed increased"	2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 4
+				"no self blast dmg"	1
+			}
+			Item	"tam o'shanter"
+		}
+			
+		//Sniper
+		T_TFBot_Giant_Sniper_Huntsman_Archer
+		{
+			ClassIcon	sniper_bow_multi_fire_giant
+			Health	3000
+			Name	"Giant Bowman Archer"
+			Class	Sniper
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the huntsman"
+				"fire rate bonus"	0.6
+				"bleeding duration" 5
+				"set damagetype ignite"	 1
+				"attach particle effect"	2
+				"minicrit vs burning player"	1
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.6
+				"damage force reduction" 0.6
+				"move speed bonus" 0.6
+			}
+			Item	"the huntsman"
+			Item	"the warsworn helmet"
+			Item	"the razorback"
+		}
+		T_TFBot_Giant_Sniper_Huntsman_Archer_Expert
+		{
+			ClassIcon	sniper_bow_multi_fire_giant
+			Health	3000
+			Name	"Giant Bowman Artemis"
+			Class	Sniper
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the huntsman"
+				"fire rate bonus"	0.4
+				"faster reload rate"	0.2
+				"projectile penetration" 1
+				"bleeding duration" 5
+				"set damagetype ignite"	 1
+				"attach particle effect"	2
+				"minicrit vs burning player"	1
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.6
+				"damage force reduction" 0.6
+				"move speed bonus" 0.6
+			}
+			Item	"the huntsman"
+			Item	"corona australis"
+			Item	"the razorback"
+		}
+	}
+}
